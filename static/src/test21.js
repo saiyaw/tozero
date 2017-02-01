@@ -11,6 +11,8 @@ class Test extends React.Component {
         ctx.textBaseline = "hanging";
         ctx.fillText("Hello World", 10, 50);
         ctx.strokeText("Hello World", 0, 100);
+        var te = ctx.measureText("Hello World");
+        console.log(te.width);
 
     }
 
